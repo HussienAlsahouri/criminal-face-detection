@@ -57,13 +57,6 @@ class Ui_Form1(object):
 "background-image: url(:/backgruond/Downloads/Gradient Blue abstract background.jpg);\n"
 "font: 75 12pt \"MS Shell Dlg 2\";")
         self.pushButton_3.setObjectName("pushButton_3")
-        #self.graphicsView = QtWidgets.QGraphicsView(Form)
-        #self.graphicsView.setGeometry(QtCore.QRect(30, 190, 271, 201))
-        #self.graphicsView.setObjectName("graphicsView")
-        #self.label_6 = QtWidgets.QLabel(Form)
-        #self.label_6.setGeometry(QtCore.QRect(90, 140, 171, 41))
-        #self.label_6.setStyleSheet("font: 75 16pt \"MS Shell Dlg 2\";")
-        #self.label_6.setObjectName("label_6")
         self.label_7 = QtWidgets.QLabel(Form)
         self.label_7.setGeometry(QtCore.QRect(30, 150, 281, 31))
         self.label_7.setStyleSheet("color:rgb(255, 0, 0);\n"
@@ -120,14 +113,11 @@ class Ui_Form1(object):
         self.sign_out_button.setStyleSheet("background-color: rgb(1, 57, 104);")
         self.sign_out_button.clicked.connect(self.sign_out)
 
-
-
         # Create a label for "Log Out"
         self.log_out_label = QLabel(Form)
         self.log_out_label.setGeometry(QtCore.QRect(15, 60, 50, 20))
         self.log_out_label.setText("Log Out")
         self.log_out_label.setAlignment(QtCore.Qt.AlignCenter)
-       # self.log_out_label.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
         self.log_out_label.setStyleSheet("background: rgb(1, 57, 104);\n"
 "font: 75 8pt \"MS Shell Dlg 2\";\n"
 "color:rgb(255, 255, 255);")
@@ -136,7 +126,6 @@ class Ui_Form1(object):
         Form.close()
         upload_process = subprocess.Popen([sys.executable, "loginGUI.py"])
         upload_process.wait()  # Wait for loginGUI.py to finish executing
-
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
@@ -161,8 +150,6 @@ class Ui_Form1(object):
         main_process.wait()  # Wait for main.py to finish executing
         gui_process.terminate()
         
-    
-
     def execute_prerecorded(self):
         upload_process = subprocess.Popen([sys.executable, "search_in_prerecorded.py"])
         upload_process.wait()  # Wait for upload.py to finish executing 
@@ -172,7 +159,6 @@ class Ui_Form1(object):
         upload_process = subprocess.Popen([sys.executable, "Register.py"])
         upload_process.wait()  
         
-
     def execute_open(self):     
         Form.close()
         upload_process = subprocess.Popen([sys.executable, "infoGUI.py"])
@@ -183,10 +169,6 @@ class Ui_Form1(object):
         upload_process = subprocess.Popen([sys.executable, "DEEP_AI.py"])
         upload_process.wait()      
         
-
-
-    
-         
 import background_rc
 
 
