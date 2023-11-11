@@ -98,7 +98,6 @@ class Ui_Form1(object):
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
-
         self.pushButton_2.clicked.connect(self.execute_main)
         self.pushButton.clicked.connect(self.execute_openregister)
         self.pushButton_3.clicked.connect(self.execute_prerecorded)
@@ -118,6 +117,7 @@ class Ui_Form1(object):
         self.log_out_label.setGeometry(QtCore.QRect(15, 60, 50, 20))
         self.log_out_label.setText("Log Out")
         self.log_out_label.setAlignment(QtCore.Qt.AlignCenter)
+       # self.log_out_label.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
         self.log_out_label.setStyleSheet("background: rgb(1, 57, 104);\n"
 "font: 75 8pt \"MS Shell Dlg 2\";\n"
 "color:rgb(255, 255, 255);")
@@ -136,7 +136,6 @@ class Ui_Form1(object):
         self.label_3.setText(_translate("Form", "Search in Live Stream"))
         self.label_4.setText(_translate("Form", "Search in Pre Recorded Video"))
         self.pushButton_3.setText(_translate("Form", "Recorded Video"))
-        #self.label_6.setText(_translate("Form", "Criminal Image"))
         self.label_7.setText(_translate("Form", "Check The Crminal Status"))
         self.pushButton_4.setText(_translate("Form", "Open"))
         self.label_8.setText(_translate("Form", "Description of the Criminal"))
@@ -170,7 +169,6 @@ class Ui_Form1(object):
         upload_process.wait()      
         
 import background_rc
-
 
 if __name__ == "__main__":
     import sys
